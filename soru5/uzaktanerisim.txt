@@ -1,0 +1,14 @@
+Liux'da uzaktan erişimi ssh kullanarak
+  ssh kullanici_adi@IP_adres 
+komut satırı ile yapılabilir.
+
+SSH (Secure Shell) iki network cihazı arasında güvenlik kanalıyla veri değişimine izin veren bir network prokolüdür.
+SSH ile yapılan bağlantı başarılı bir şekilde gerçekleştiyse servera erişim başarılı bir şekilde sağlanmış olmaktadır.
+
+Dosya atmak ve çekmek için aşağıdaki komutlar kullanılabilir:
+Dosya atmak için, sunucuda dosya konumunu belirleyin ve "scp" komutunu kullanarak dosyayı sunucuya kopyalayın. Örnek: "scp dosya.txt kullaniciadı@ipadresi:~/hedefkonum"
+Dosya çekmek için, sunucudaki dosya konumunu belirleyin ve "scp" komutunu kullanarak dosyayı lokal makineye kopyalayın. Örnek: "scp kullaniciadı@ipadresi:~/hedefkonum/dosya.txt ." (nokta, dosyanın lokal dizine kopyalanacağını belirtir)
+
+SCP, Secure Copy Protocol'ün kısaltmasıdır. Kullanıcının genellikle unix veya linux sistemleri arasında iki konum arasında dosya ve dizinleri güvenli bir şekilde kopyalamasına izin veren bir komut satırı yardımcı programıdır.
+  scp [OPTIONS] [[user@]src_host:]file1 [[user@]dest_host:]file2
+komutu ile yapılabilir.

@@ -1,0 +1,13 @@
+Frontend tarafından JavaScript veya benzer bir dinamik tarama dilinin kullanımı gereklidir. Aşağıdaki yöntemler bu amaç için kullanılabilir:
+  AJAX (Asynchronous JavaScript and XML): Bu teknolojisi kullanarak, frontend tarafından asenkron olarak sunucuya istek yapılabilir ve alınan veriler ekrandaki içeriği güncelleyebilir.
+  WebSockets: Bu teknolojisi kullanarak, sunucu ve frontend arasında gerçek zamanlı bir bağlantı kurulabilir ve sunucu herhangi bir veri güncellemesi yaparsa anında frontend tarafına bildirilebilir.
+  Server Sent Events (SSE): Bu teknolojisi kullanarak, sunucu tarafından frontend'e veri gönderilebilir ve frontend tarafı bu verileri anında ekrandaki içeriği güncelleyebilir.
+
+Her bir yöntemin avantajları ve dezavantajları vardır ve hangisinin kullanılması gerektiği, uygulamanın gereksinimlerine ve performansına göre belirlenmelidir.
+
+AJAX (Asynchronous JavaScript and XML), sunucu ile arka planda asenkron veri alışverişi yapmanıza olanak tanır, böylece sayfa yenilenmeden güncel veriler ekrana yansıtılabilir. Aşağıdaki adımlar bu yapının nasıl oluşturulabileceğine dair genel bir fikir verir:
+  Web sayfasındaki güncel veriler, sunucuda saklanır ve Backend tarafından periyodik olarak güncellenir.
+  JavaScript ile sunucuya sürekli olarak istek yapılır ve güncel veriler alınır.
+  Ajax kullanarak sunucuya yapılan istekler arka planda yapılır ve web sayfasının refresh edilmesi gerekmez.
+  Alınan veriler, HTML DOM üzerinde JavaScript ile dinamik olarak güncellenir ve ekran sürekli olarak güncel verileri görür.
+Bu yapı, verilerin sürekli olarak güncellenmesini ve anında ekrana yansıtılmasını mümkün kılar. Ayrıca, sayfa yenilenmeden veri alınması, daha hızlı ve daha az veri trafiği gerektiren bir kullanıcı deneyimi sunar.

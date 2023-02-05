@@ -1,0 +1,5 @@
+HTTP sorgusu şu şekilde olabilir:
+  http://example?q=updatedAt:[20200101000000 TO *]
+
+Bu sorgu, "updatedAt" alanındaki değerleri 2020 Ocak ayından sonrasına kadar olan tüm kayıtları döndürür. "q" parametresi sorgu ifadesini belirtir ve "updatedAt:[20200101000000 TO *]" değeri sorgu ifadesidir.
+20200101000000 değeri, 2020 yılının Ocak ayının 1. günü 00:00:00'dır ve "TO *" wildcard operatorü tüm kayıtları döndürür.

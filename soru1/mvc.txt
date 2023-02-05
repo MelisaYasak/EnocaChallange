@@ -1,0 +1,20 @@
+MVC (Model-View-Controller), bir yazılım mimarisi desenidir ve kullanıcı ara yüzü tabanlı yazılımlarda çok yaygın olarak kullanılır. Kullanıcı arayüzünün veri ve görüntüsünü ayrı ayrı işlemek üzere üç farklı bölüme ayrılmasını amaçlar. MVC, kodun daha okunabilir ve test edilebilir olmasını, ekranlar arasında veri akışının düzenlenmesini ve uygulamanın büyüklüğüne göre skalabilirliğini sağlar.
+  Model: Verilerin saklandığı ve işlendiği bölümdür.
+  View: Kullanıcıya verilerin görsel olarak sunulduğu bölümdür.
+  Controller: Model ve View arasındaki iletişimi yöneten ve kullanıcının yapmış olduğu işlemleri yorumlayan bölümdür.
+Neden ihtiyaç duyuluyor: MVC, yazılımın büyüklüğüne ve kompleksliğine bağlı olarak karmaşık hale gelebilecek yapısını düzenlemek, kodun daha okunabilir ve anlaşılır olmasını sağlamak, veri ve görsel unsurları ayrı ayrı işlemek gibi amaçlarla kullanılır.
+
+Java'da nasıl kurgulanıyor: 
+Java'da MVC, Java Servlet, JavaServer Pages (JSP) ve JavaBeans gibi teknolojiler kullanılarak kurgulanabilir. Bu framework'ler, Model, View ve Controller bölümlerini kolayca tanımlayabilme ve bu bölümler arasındaki iletişimi yönetme imkanı sunar.
+Model sınıfları verileri temsil eder ve veri kaynaklarına (veritabanı, XML dosyası vb.) erişir. View sınıfları ise verilerin görsel olarak sunulmasını sağlar ve kullanıcının verilerle etkileşimini kontrol eder. Controller sınıfları ise, kullanıcının verilere erişimini ve verilerin güncellenmesini yönetir ve Model ve View sınıfları arasında veri akışını kontrol eder.
+
+
+Object Oriented katmanları: 
+Object Oriented (Nesne Yönelimli) yaklaşımı, yazılımı farklı sınıflar ve nesneler olarak düzenlemek ve bu nesnelerin birbirleriyle etkileşimlerini tanımlamak için kullanılan bir yazılım geliştirme yaklaşımıdır. Object Oriented katmanları, yazılımın fonksiyonel ve veri bölümlerini içermektedir ve bu katmanlar arasında verilerin ve işlemlerin iletişimi sağlanır.
+
+Genellikle, nesne yönelimli uygulamalarda 4 temel katman bulunur:
+  Presentation Layer (Sunum Katmanı): Kullanıcı arayüzünü ve görsel elemanlarını temsil eder.
+  Business Layer (İş Katmanı): Uygulamanın veri işleme işlemlerini içerir.
+  Data Access Layer (Veri Erişim Katmanı): Veritabanına veya diğer veri kaynaklarına erişim işlemlerini yapar.
+  Infrastructure Layer (Altyapı Katmanı): Uygulamanın alt yapısını ve destek işlemlerini (örneğin, güvenlik, veritabanı bağlantısı vb.) içerir.
+

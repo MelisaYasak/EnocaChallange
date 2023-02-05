@@ -1,0 +1,18 @@
+Bağımsız platformlar arasında haberleşme sağlamak için birkaç yol vardır. Bunlar şunlardır:
+  REST API: REST (Representational State Transfer) API, her iki platform arasındaki haberleşme için kullanılabilecek popüler bir yoldur. REST API HTTP protokolü üzerinden istek/cevap işlemi yapar. X platformu tarafından sunulan bir REST API, Y platformu tarafından HTTP istekleri ile çağrılabilir ve veriler JSON veya XML formatında dönebilir.
+  Message Queue: X platformu tarafından mesajlar RabbitMQ, Apache Kafka gibi bir mesaj kuyruğuna gönderilir ve Y platformu tarafından bu mesajlar okunabilir.
+  Socket Programming: Her iki platform da bir socket ağ bağlantısı kullanarak direk olarak haberleşebilir. X platformu tarafından bir socket açılabilir ve Y platformu tarafından bu socket üzerinden veriler gönderilebilir ve alınabilir.
+
+Her yolun avantajları ve dezavantajları vardır ve hangisinin kullanılması gerektiği, uygulamanın gereksinimlerine ve performans ihtiyaçlarına bağlıdır.
+
+
+İki platform arasındaki haberleşme, genellikle bir API (Application Programming Interface) kullanılarak sağlanır. API, platformlar arasında veri alışverişini ve fonksiyonalite paylaşmasını mümkün kılan bir arayüzdür. API, istekleri algılar, gerekli işlemleri yapar ve isteğe bağlı olarak yanıt verir. İki platform arasındaki haberleşme, ayrıca web hizmetleri, mesajlaşma protokolleri veya dosya paylaşma yöntemleri gibi diğer teknolojiler de kullanılabilir. Önemli olan, her iki platformun da aynı formatta veri algılaması ve yanıt vermesi gerektiğidir.
+Bu iki platform arasındaki haberleşme, REST API veya SOAP API gibi web servisleri kullanarak sağlanabilir. Aşağıdaki adımlar bu yapının nasıl oluşturulabileceğine dair genel bir fikir verir:
+
+  X platformu, Java ile REST API veya SOAP API gibi bir web servisi oluşturur.
+  Y platformu, C# ile bu API'ye istek yapar ve API tarafından gönderilen yanıtlardan verileri kullanır.
+  X platformu, Y platformundan gelen isteklere yanıt verir ve gerekli verileri işler.
+  Bu yapı, HTTP veya HTTPS protokolleri kullanılarak gerçekleştirilebilir ve her iki platform da aynı formatta veri algılamalı ve yanıt vermelidir. 
+
+REST API kullanmak daha modern ve esnek bir yapı sunarken, SOAP API daha güvenli ve eski teknolojiler ile uyumlu olabilir. Her iki seçeneğin de avantaj ve dezavantajları vardır ve hangisi kullanılacağı, ihtiyacın ve gereksinimlerin doğrultusunda belirlenmelidir.
+
